@@ -9,7 +9,12 @@ function addBola(){
 
     bola.setAttribute("style", "left:"+p1+"px; top:"+p2+"px;");
 
-    bola.setAttribute("onclick", "estourar");
+    bola.setAttribute("onclick", "estourar(this)");
 
     document.body.appendChild(bola);
+}
+
+function estourar(elemento){
+
+    document.body.removeChild(elemento);
 }
