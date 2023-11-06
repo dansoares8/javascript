@@ -18,3 +18,7 @@ function estourar(elemento){
 
     document.body.removeChild(elemento);
 }
+
+function iniciar(){
+    setInterval(addBola, 2000);
+}
